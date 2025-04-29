@@ -78,6 +78,7 @@
   justify-content: end;
   flex-direction: column;
 }
+
 img {
   block-size: 100%;
   inline-size: 100%;
