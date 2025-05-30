@@ -17,7 +17,7 @@
   align-items: center;
   flex-direction: column;
   font-family: var(--font-family-basic);
-  font-variation-settings: "wght", var(--font-weight-basic);
+  font-variation-settings: "wght" var(--font-weight-basic);
   color: var(--color-black);
   background-size: cover;
   background-attachment: fixed;
@@ -90,12 +90,13 @@ img {
   line-height: var(--section-height);
   padding: 5px 0 5px 10px;
   border-bottom: 2px solid var(--color-black);
+  font-variation-settings: "wght" var(--font-weight-accent);
 }
 
 .section_label {
   position: absolute;
-  top: 27px;
-  right: 25px;
+  top: 20px;
+  right: 13px;
   opacity: 0.5;
   color: var(--color-black);
   text-shadow: 0 0 1px var(--color-white);
@@ -125,6 +126,7 @@ img {
 .content_footer {
   font-size: var(--basic-size);
   line-height: var(--basic-line-height);
+  font-variation-settings: "wght" var(--font-weight-basic);
 }
 
 /* -----------btn-------------- */
@@ -132,7 +134,7 @@ img {
 .button-like {
   display: flex;
   justify-content: flex-end;
-  gap: 5px;
+  gap: 7px;
 }
 
 .button {
@@ -176,9 +178,10 @@ img {
 }
 
 .card__icon-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
+  width: 39px; /*  размер для иконки */
+  height: 38px; /* Сделал как с высотой кнопки Like */
   border: 2px solid transparent;
   transition: border-color 0.3s ease;
   background-color: transparent;

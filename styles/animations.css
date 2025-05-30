@@ -76,6 +76,15 @@
     transform-origin: center;
     animation: sparks 0.3s ease-in 0.3s 1;
   }
+
+  .card__icon-button:focus {
+    outline: none;
+  }
+  
+  .card__icon-button:focus-visible {
+    border: 2px solid var(--color-black);
+  }
+  
   
   @keyframes sparks {
     0% {
