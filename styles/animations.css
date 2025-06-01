@@ -33,17 +33,18 @@
   
   .card__icon-button:hover .core {
     fill: var(--hover);
-    transition: fill 0.3s linear 0.03s;
+    transition: fill 0.3s linear 0;
   }
   
   .card__icon-button:hover .main-body {
     fill: var(--hover);
-    transition: fill 0.3s linear 0.03s;
+    transition: fill 0.3s linear 0.05s;
   }
   
   .card__icon-button:active .core{
     fill: var(--sparks);
     transition: linear 0s;
+
   }
   .card__icon-button:active .main-body {
     fill: var(--sparks);

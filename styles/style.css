@@ -10,6 +10,47 @@
 
 */
 
+/* про нижний отступ не понял, распишите, подобронее, пожалуйста. Так же не понял про gh pages вроде все на gite, куда вы имеете в виду добавить. Расхождение с форматом 375 и 1440 постарался исправить более 10 часов, потому что либо там плохо было либо там, очень надеюсь, что вам все понравится. так же есть решение по нижнему отступу, если правильно понял вас */
+
+/*В variables.css добавим переменные для отступов:
+:root {
+    /* существующие переменные */
+    /*--page-margin: 100px; /* Основной отступ */
+   /* --page-margin-mobile: 50px; /* Мобильный отступ */
+   /* --page-side-padding: 20px; /* Боковые отступы */
+    /*--page-side-padding-mobile: 10px; /* Боковые отступы на мобильных */
+
+
+/*В style.css модифицируем стили:
+.page {
+  /* существующие стили */
+  /*margin: var(--page-margin) auto;
+  padding: 0 var(--page-side-padding);
+  width: 100%;
+  max-width: 1440px;
+  box-sizing: border-box;
+}*/
+
+/* В медиазапросе для мобильных */
+/*@media (max-width: 375px) {
+  .page {
+      margin: var(--page-margin-mobile) auto;
+      padding: 0 var(--page-side-padding-mobile);
+  }
+  
+  /* остальные мобильные стили */
+
+
+/*В globals.css добавим базовые стили для body:
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+} 
+*/
+/*надеюсь, что праавильно понял вас*/
+
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -95,8 +136,8 @@ img {
 
 .section_label {
   position: absolute;
-  top: 20px;
-  right: 13px;
+  top: 23px;
+  right: 19px;
   opacity: 0.5;
   color: var(--color-black);
   text-shadow: 0 0 1px var(--color-white);
@@ -178,7 +219,7 @@ img {
 }
 
 .card__icon-button {
-  display: grid;
+  display: flex;
   place-items: center;
   width: 39px; /*  размер для иконки */
   height: 38px; /* Сделал как с высотой кнопки Like */
@@ -319,7 +360,7 @@ img {
 
 /* -----media-and-support------- */
 
-@media (max-width: 376px) {
+@media (max-width: 375px) {
   .card-header {
     row-gap: 11px;
     padding-block-end: 104px;
