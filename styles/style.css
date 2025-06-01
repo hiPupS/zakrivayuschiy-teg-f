@@ -66,6 +66,7 @@ body {
   background-repeat: no-repeat;
   background-image: var(--background-image);
   background-color: var(--color-white);
+  margin-bottom: 103px;
 }
 
 /* ----------header---------- */
@@ -136,8 +137,8 @@ img {
 
 .section_label {
   position: absolute;
-  top: 23px;
-  right: 19px;
+  top: 25px;
+  right: clamp(0.8125rem, 0.5484rem + 1.1268vw, 1.5625rem);
   opacity: 0.5;
   color: var(--color-black);
   text-shadow: 0 0 1px var(--color-white);

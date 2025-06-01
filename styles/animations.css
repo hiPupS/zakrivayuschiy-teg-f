@@ -48,7 +48,7 @@
   }
   .card__icon-button:active .main-body {
     fill: var(--sparks);
-    transition: linear 0.03s;
+    transition: linear 0.05s;
   }
   /* не понял, как исправить данну. ошибку в верхнем селеторе 
   "Состояние :active" неуказанна никакой задержки, какую мнеписать? но надеюсь сделал правильно*/
